@@ -1,8 +1,16 @@
 ###  config:
-
+json_convert_json
+> json_file_path json文件夹路径
+> csv_name 生成csv文件名
 
 ### 使用:
-> npm run build-csv
+
+1) 将json文件 放置 json-file 文件夹下
+2) 执行以下命令：
+```
+$npm run build-csv  
+```
+3) csv文件在build 文件夹下
 
 ---
 
