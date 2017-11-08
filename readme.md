@@ -1,7 +1,7 @@
 ###  config:
-json_convert_json
-> json_file_path json文件夹路径
-> csv_name 生成csv文件名
+json_convert_json  
+-  json_file_path ->json文件夹路径 
+-  csv_name  ->生成csv文件名
 
 ### 使用:
 
