@@ -11,8 +11,8 @@ let isArray = function(data){
 
 let processVal = function(str){
 	let result = str;
-	if(str.indexOf('“') !== -1 ){
-		result = ('"'+ str.replace(/[”]|[“]/g, '""')+'"');
+	if(str.indexOf('"') !== -1 ){
+		result = ('"'+ str.replace(/["]/g, '""')+'"');
 	}else if(str.indexOf(',') !== -1 ){
 		result = ('"'+ str+'"');
 	}
