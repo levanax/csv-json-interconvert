@@ -1,6 +1,12 @@
-please try : npm install csv-json-interconvert
+### install :
+> npm install csv-json-interconvert
+or 
+> npm install https://github.com/levanax/csv-json-interconvert.git
 
-使用命令:
+###  config:
+
+
+### 使用:
 > npm run build-csv
 
 ---
