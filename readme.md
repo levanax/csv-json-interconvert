@@ -1,8 +1,3 @@
-### install :
-> npm install csv-json-interconvert
-or 
-> npm install https://github.com/levanax/csv-json-interconvert.git
-
 ###  config:
 
 
