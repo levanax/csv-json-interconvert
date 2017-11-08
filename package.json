@@ -1,0 +1,18 @@
+{
+  "name": "csv-json-interconvert",
+  "version": "1.0.0",
+  "description": "csv json interconvert",
+  "main": "index.js",
+  "scripts": {
+    "build-csv": "node build-csv.js"
+  },
+  "keywords": [
+    "csv-json-interconvert"
+  ],
+  "author": "levanax",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^4.0.0",
+    "yamljs": "^0.3.0"
+  }
+}
