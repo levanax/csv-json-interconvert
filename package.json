@@ -4,7 +4,11 @@
   "description": "csv json interconvert",
   "main": "index.js",
   "scripts": {
-    "build-csv": "node build-csv.js"
+    "clean-file": "node bin/clean-file.js",
+    "build-csv": "node bin/build-csv.js",
+    "copy-file": "node bin/copy-file.js",
+    "auto-merge-csv": "node bin/auto-merge-csv.js",
+    "to-csv": "node bin/auto-merge-csv.js"
   },
   "keywords": [
     "csv-json-interconvert"

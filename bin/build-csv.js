@@ -1,4 +1,4 @@
-const util = require('./util/util.js');
+const util = require('../util/util.js');
 const fs = require('fs');
 const jsonfile = require('jsonfile');
 const YAML = require('yamljs');

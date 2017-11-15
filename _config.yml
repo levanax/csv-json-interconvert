@@ -1,3 +1,10 @@
 json_convert_csv:
   json_path: ./json-file/
   csv_path: ./result.csv
+
+
+copy_file:
+  module:  SYWGMR #可留空
+  source_folder_path: D:/Levana.Xue/CompanyProject/PortalMobile/branches/2fa/locales/
+  target_folder_path: D:/Levana.Xue/privateWorkspace/csv-json-interconvert-git/json-file/
+
