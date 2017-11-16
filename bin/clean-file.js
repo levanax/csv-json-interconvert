@@ -24,11 +24,10 @@ for(let i=0, length = target_files_individuation.length; i<length; i++){
 
 for (let i = 0, length = delete_file_list.length; i < length; i++) {
 	let file =  delete_file_list[i];
-	console.log(file)
 	if (new RegExp(/.json$/).test(file)) {
 		fs.unlinkSync(file);
 	}
 }
 
 
-console.log('clone file completed.');
+console.log('clean file completed.');
