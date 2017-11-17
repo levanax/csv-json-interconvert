@@ -8,7 +8,8 @@
     "build-csv": "node bin/build-csv.js",
     "copy-file": "node bin/copy-file.js",
     "auto-merge-csv": "node bin/auto-merge-csv.js",
-    "to-csv": "node bin/auto-merge-csv.js"
+    "to-csv": "node bin/auto-merge-csv.js",
+    "test": "node bin/test.js"
   },
   "keywords": [
     "csv-json-interconvert"
@@ -16,6 +17,7 @@
   "author": "levanax",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.3.0",
     "jsonfile": "^4.0.0",
     "yamljs": "^0.3.0"
   }

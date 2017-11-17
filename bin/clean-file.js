@@ -1,5 +1,6 @@
 const util = require('../util/util.js');
 const fs = require('fs');
+const chalk = require('chalk');
 const {
 	COPYFILE_EXCL
 } = fs.constants;
@@ -30,4 +31,4 @@ for (let i = 0, length = delete_file_list.length; i < length; i++) {
 }
 
 
-console.log('clean file completed.');
+console.log(chalk.yellow('clean file completed.'));

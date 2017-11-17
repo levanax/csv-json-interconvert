@@ -2,6 +2,7 @@ const util = require('../util/util.js');
 const fs = require('fs');
 const jsonfile = require('jsonfile');
 const YAML = require('yamljs');
+const chalk = require('chalk');
 
 let config = YAML.load('./_config.yml');
 
@@ -38,7 +39,7 @@ contentArray = contentArray.concat(util.processMultipleLanguage(languageObjects)
 try {
 	fs.unlinkSync(csvFilePath);
 } catch (e) {
-	console.log('file is not exist.');
+	console.log(chalk.red('file is not exist.'));
 }
 
 fs.open(csvFilePath, 'w', (err, fd) => {
@@ -52,7 +53,7 @@ fs.open(csvFilePath, 'w', (err, fd) => {
 		if (err) {
 			console.log(err);
 		} else {
-			console.log('build complete. please go : ' + csvFilePath);
+			console.log(chalk.green('build complete. please go : ' + csvFilePath));
 		}
 	});
 })

@@ -1,5 +1,6 @@
 const util = require('../util/util.js');
 const fs = require('fs');
+const chalk = require('chalk');
 const {
 	COPYFILE_EXCL
 } = fs.constants;
@@ -31,4 +32,4 @@ for (let i = 0, length = langDir.length; i < length; i++) {
 	}
 }
 
-console.log('copy file completed.');
+console.log(chalk.green('copy file completed.'));
