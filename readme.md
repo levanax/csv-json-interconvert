@@ -5,6 +5,14 @@ excel 文件 可直接转 json文件，配置请参考 config.yml 说明
 ```
 npm run to-json
 ```
+### 安装依赖
+```
+cnpm i 
+
+//以下可能需要
+cnpm i node-xlsx --save
+cnpm install csv@0.3.7 --save
+```
 
 ## 生成csv 文件  
 ###  config:
