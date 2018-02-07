@@ -1,4 +1,11 @@
 
+## 使用说明
+### 描述
+excel 文件 可直接转 json文件，配置请参考 config.yml 说明
+```
+npm run to-json
+```
+
 ## 生成csv 文件  
 ###  config:
 json_convert_csv    
@@ -36,3 +43,8 @@ fs.readFile('./_config.yml', (err, data)=> {
 ```
 
 https://stackoverflow.com/questions/10384340/new-line-in-node-js
+
+
+
+### 参考链接：
+https://stackoverflow.com/questions/34342425/convert-xls-to-csv-on-the-server-in-node

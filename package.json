@@ -9,7 +9,8 @@
     "copy-file": "node bin/copy-file.js",
     "auto-merge-csv": "node bin/auto-merge-csv.js",
     "to-csv": "node bin/auto-merge-csv.js",
-    "test": "node bin/test.js"
+    "test": "node bin/test.js",
+    "to-json": "node bin/auto-xlsx-to-json.js"
   },
   "keywords": [
     "csv-json-interconvert"
