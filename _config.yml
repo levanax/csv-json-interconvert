@@ -13,10 +13,10 @@ copy_file:
 #excel文件转 csv文件 配置
 xlsx_to_csv_utf8:
   xlsx_file_path: ./translate.xlsx #excel文件路径
-  csv_file_path: ./cache/csv-to-json/csv-dir/temp.csv #生成csv文件路径
+  csv_file_path: ./.cache/csv-to-json/csv-dir/temp.csv #生成csv文件路径
 
 #csv文件 转 json文件
 csv_to_json:
-  csv_file_path: ./cache/csv-to-json/csv-dir #csv文件目录
+  csv_file_path: ./.cache/csv-to-json/csv-dir #csv文件目录
   build_file_path: ./build/jsonFile #生成csv文件目录
 
