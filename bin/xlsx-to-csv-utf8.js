@@ -19,7 +19,10 @@ for (var i = 0; i < obj.length; i++) {
     var sheet = obj[i];
     //loop through all rows in the sheet
     for (var j = 0; j < sheet['data'].length; j++) {
-        //add the row to the rows array
+        // add the row to the rows array
+        for(var k = 0; k<sheet['data'][j].length; k++){
+            sheet['data'][j][k] ="\""+ sheet['data'][j][k].replace(/\"/g, '""')+"\"";
+        }
         rows.push(sheet['data'][j]);
     }
 }
