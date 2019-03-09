@@ -10,7 +10,8 @@
     "auto-merge-csv": "node bin/auto-merge-csv.js",
     "to-csv": "node bin/auto-merge-csv.js",
     "test": "node bin/test.js",
-    "to-json": "node bin/auto-xlsx-to-json.js"
+    "to-json": "node bin/auto-xlsx-to-json.js",
+    "to-p": "node bin/xlsx-to-properties-file.js"
   },
   "keywords": [
     "csv-json-interconvert"

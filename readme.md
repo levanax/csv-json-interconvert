@@ -37,6 +37,12 @@ npm run to-json
 
 ---
 
+## excel 转 properities 文件
+执行以下命令，相关配置 xlsx_to_properties_file
+```
+npm run to-p
+```
+
 ## 生成csv 文件  
 ###  config:
 json_convert_csv    
