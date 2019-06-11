@@ -13,6 +13,20 @@ let config = YAML.load('./_config.yml');
 var obj = xlsx.parse(config.xlsx_to_csv_utf8.xlsx_file_path); // parses a file
 var rows = [];
 var writeStr = "";
+/**
+ * 处理前后空格转义 
+ */
+function convertSpaceChar(str){
+    str = str.replace(/(&nbsp;)+/, function(match){
+        var result = new Array(match.length/6+1);
+        return result.join(' ');
+    })
+    str = str.replace(/(&nbsp;)+$/, function(match){
+        var result = new Array(match.length/6+1);
+        return result.join(' ');
+    })
+    return str;
+}
 
 //looping through all sheets
 for (var i = 0; i < obj.length; i++) {
@@ -21,7 +35,7 @@ for (var i = 0; i < obj.length; i++) {
     for (var j = 0; j < sheet['data'].length; j++) {
         // add the row to the rows array
         for(var k = 0; k<sheet['data'][j].length; k++){
-            sheet['data'][j][k] ="\""+ sheet['data'][j][k].replace(/\"/g, '""')+"\"";
+            sheet['data'][j][k] ="\""+ convertSpaceChar(sheet['data'][j][k]).replace(/\"/g, '""')+"\"";
         }
         rows.push(sheet['data'][j]);
     }
