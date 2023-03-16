@@ -1,25 +1,25 @@
 #json文件 转csv文件
 json_convert_csv:
-  json_path: ./json-file/
-  csv_path: ./result.csv
+  json_path: ./dist/json-file/
+  csv_path: ./dist/csv/result.csv
 
 #针对portal moblie 的文件结构 copy到该目录
 copy_file:
-  module: #SYWGMR #可留空
-  source_folder_path: D:/Levana.Xue/CompanyProject/PortalMobile/branches/2fa/locales/
-  target_folder_path: D:/Levana.Xue/CompanyProject/Tools/csv-json-interconvert/json-file/
+  module: SY5220 #SYWGMR #可留空
+  source_folder_path: D:/Levana.Xue/CompanyProject/PortalMobile/locales/
+  target_folder_path: ./dist/json-file/
 
 #excel文件转 csv文件 配置
 xlsx_to_csv_utf8:
-  xlsx_file_path: D:/Levana.Xue/CompanyProject/ESOP/ESOP-APP/trunk/src/i18n/translate.xlsx #excel文件路径
+  xlsx_file_path: ./translate.xlsx #excel文件路径
   csv_file_path: ./.cache/csv-to-json/csv-dir/temp.csv #生成csv文件路径
 
 #csv文件 转 json文件
 csv_to_json:
   csv_file_path: ./.cache/csv-to-json/csv-dir #csv文件目录
-  build_file_path: D:/Levana.Xue/CompanyProject/ESOP/ESOP-APP/trunk/src/i18n/langs #生成csv文件目录
+  build_file_path: ./dist #生成csv文件目录
 
 #excel 文件转 properties 属性文件
 xlsx_to_properties_file:
   xlsx_file_path: ./translate.xlsx
-  properties_path: ./build/
+  properties_path: ./dist/

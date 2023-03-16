@@ -3,6 +3,7 @@ const fs = require('fs');
 const jsonfile = require('jsonfile');
 const YAML = require('yamljs');
 const chalk = require('chalk');
+const _ = require('lodash');
 
 let config = YAML.load('./_config.yml');
 
@@ -20,6 +21,9 @@ let colTitle = [];
 for (let i = 0, length = jsonDir.length; i < length; i++) {
 	if (!util.isEmpty(jsonDir[i]) && new RegExp(/.json$/).test(jsonDir[i])) {
 		let languageObj = jsonfile.readFileSync(jsonFilePath + jsonDir[i]);
+		if(_.isEmpty(languageObj)){
+			continue;
+		}
 
 		let individuationJsonPath = jsonFilePath+'individuation/' + jsonDir[i];
 		if(fs.existsSync(individuationJsonPath)){

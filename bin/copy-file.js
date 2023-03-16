@@ -11,7 +11,7 @@ let config = YAML.load('./_config.yml');
 let langDir = fs.readdirSync(config.copy_file.source_folder_path);
 
 for (let i = 0, length = langDir.length; i < length; i++) {
-	if ('dev' !== langDir[i]) {
+	if (!['dev', 'zh'].includes(langDir[i])) {
 		let source_file = config.copy_file.source_folder_path + langDir[i] + '/translation.json';
 		let target_file = config.copy_file.target_folder_path + langDir[i] + '.json';
 		if (fs.existsSync(target_file)) {
